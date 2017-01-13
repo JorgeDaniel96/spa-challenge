@@ -1,0 +1,13 @@
+<div class = "containerFavouritesList">
+	<header id = "headerFavouritesList">
+		<img  id = "iconFavouritesList" src = "../../general_assets/icons/favourites.png"> 
+    	<h1>My favourites</h1>
+	</header>
+
+	<div id = "containerComics" v-for = "comic in addcomicFavouritesList" track-by = "$index">
+		<img @click = "showImgZoom(comic)" class = "imgComicsFavourites" src = "{{comic.images[0].path}}.{{comic.images[0].extension}}"> 
+		<div class = "containerButtonDelete">
+			<img @click = "deleteComicFavourite($index)" src = "../../general_assets/icons/btn-delete.png">
+		</div>
+	</div>
+</div>	

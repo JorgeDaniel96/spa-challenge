@@ -1,0 +1,15 @@
+<div class = "row between-xs  containerCharacterTopbar">
+	<div class = "col-xs-3 containerIconAndTitle">
+		<img id = "iconCharacter" src = "../../general_assets/icons/characters.png">
+		<h1 id = "titleCharacter"> Characters </h1>
+	</div>
+
+	<select v-model = "option" class = "col-xs-4 sortBy">
+		<optgroup label = "Sort By" >
+		    <option> name </option>
+		    <option> -name </option>
+		    <option> modified </option>
+		    <option selected> -modified </option>
+	    </optgroup>
+	</select>
+</div>

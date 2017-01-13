@@ -1,0 +1,25 @@
+<div class = "row col-xs-8 col-md-7 col-lg-5 containerUserCard">
+	<div class = "row col-xs-4 containerUserImg">
+		<div class = "col-xs-12 containerImg">
+			<img @click = "showImgZoom(characterInfo)" id = "userImg" :src = "characterInfo.thumbnail.path + '.' + characterInfo.thumbnail.extension">
+		</div>
+	</div>
+
+	<div class = "col-xs-5 col-sm-7 containerUserInfo">
+		<h2 id="nameComic">{{characterInfo.name}}</h2>
+		<label class="containerDescription">{{characterInfo.description || noDescriptionMsg}}</label>
+		<label id = "idCharacter" v-model = "getComics(characterInfo.id)">{{characterInfo.id}}</label>
+		<label @click = "characterSelected(characterInfo.id)" id = "buttonViewMore" >VIEW MORE</label>
+
+	</div>
+
+	<div class = "row start-xs containerRelatedComics">
+		<h3 class="col-xs-12 titleRelatedComic">Related Comic</h3>
+		<div class="row	 containerTitleComics" @click = "showComicsModal(comic)" 
+			 v-for = "comic in comics">
+	    	 <label class="titleComic">{{comic.title || noComicsMsg}} </label>
+		</div>
+	</div>
+
+	
+</div>

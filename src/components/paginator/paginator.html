@@ -1,0 +1,8 @@
+<div id = "containerPaginator">
+	<button @click = "backPage()" class = "button" > <img src = "../../general_assets/icons/btn_arrow_left.png"> </button>
+	<button class = "button" @click="getCharactersList(page)" v-for = "page in pages" v-if = "page > currentPage - 3 && page < currentPage + 3" >
+		{{page}} 
+	</button>
+	<button @click = "nextPage()" class = "button"> <img src = "../../general_assets/icons/btn_arrow_right.png"> </button>
+</div>
+

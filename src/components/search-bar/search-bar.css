@@ -1,0 +1,99 @@
+.header {
+    background: #2d2727;
+    height: 100px;
+    display: flex;
+    padding: 15px 0px;
+    box-shadow: 0px 4px 6px rgb(185, 185, 185);
+}
+
+.header input:focus {
+    outline: 0;
+}
+
+.containerMarvelLogo {
+    margin-right: 3.5%;
+    display: flex;
+    align-items: center;
+}
+
+#marvelLogo {
+    margin-left: 15%;
+    height: 70px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.containerInputSearch {
+    margin-left: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.searchBar {
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 20px;
+    height: 50px;
+    width: 75.3%;
+    min-width: 216px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    border: 1.5px solid white;
+}
+
+#iconSearch {
+    background: white;
+    border-left: none;
+    height: 44px;
+    border: 3.1px solid white;
+    margin-left: -50px;
+    border-radius: 3px;
+    color: rgb(181, 181, 181);
+}
+
+.containerSearchResults {
+    width: 100%;
+    margin-top: 13px;
+    display: flex;
+}
+
+.containerResults {
+    background-image: url(https://i.ytimg.com/vi/ZvdR_bcQRjM/maxresdefault.jpg);
+    background-size: cover;
+    max-height: 70vh;
+    position: relative;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    padding: 0px 15px;
+    border-radius: 2px;
+    z-index: 1; 
+}
+
+.containerResults ul {
+    padding: 0;
+    color: white;
+}
+
+.containerResults li:hover {
+    background: rgba(65, 63, 64, 0.41);
+    border-radius: 5px;
+}
+
+.containerResults ul li {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.imgSearchResult {
+    height: 70px;
+    width: 70px;
+    border-radius: 45px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+

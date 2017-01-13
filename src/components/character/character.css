@@ -1,0 +1,111 @@
+#app {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    background-color: rgb(244, 244, 244);
+}
+
+.characterSection {
+    width: 82%;
+    display: flex;
+}
+
+.containerUserCard {
+    background: rgb(255, 255, 255);
+    min-width: 414px;
+    height: 350px;
+    overflow: auto;
+    margin-top: 34px;
+    margin-right: 4.4%;
+    justify-content: space-around;
+}
+
+.containerUserImg {
+    margin-right: 20px;
+    height: 47%;
+}
+
+.containerImg {
+    position: absolute;
+    margin: -14px 0px 0px -46px;
+}
+
+#userImg {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+#userImg:hover {
+    height: 190px;
+    width: 190px;
+    border: 5px solid black;
+}
+
+
+#nameComic {
+    font-size: 114%;
+    text-transform: uppercase;
+    color: #473d3c;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.containerDescription {
+    color: #867c7b;
+    margin-top: -10px;
+    height: 65%;
+    overflow: hidden;
+    display: flex;
+    text-align: left;
+}
+
+#buttonViewMore {
+    background: #ee1d23;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonViewMore:hover {
+    border: 2px solid black;
+}
+
+#idCharacter {
+    display: none;
+}
+
+.containerRelatedComics {
+    width: 100%;
+    height: 115px;
+    justify-content: center;
+    flex-direction: row;
+    color: #796d6d
+}
+
+
+.containerTitleComics {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 9px;
+}
+
+.titleComic {
+    cursor: pointer;
+    color: rgb(119, 109, 108);
+}
+
+.titleComic:hover {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+

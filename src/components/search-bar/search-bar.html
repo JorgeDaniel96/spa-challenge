@@ -1,0 +1,22 @@
+<div  class = "row header">
+    <div class = "col-md-2  containerMarvelLogo">
+        <img @click = "returnMainPage()" id = "marvelLogo" src = "../../general_assets/icons/marvel-logo.png">
+    </div>
+    <div class = "col-xs-7 col-md-offset-1 col-md-8 containerInputSearch">
+        <input  @keyup.enter = "showCharacterSought()" class = "searchBar"  v-model = "nameToSearch"  type = "search"  placeholder = "Search character...">
+
+        <img id = "iconSearch" v-show = "nameToSearch.length === 0" src = "../../general_assets/icons/search.png">
+    </div>
+    <div class="row center-xs containerSearchResults">
+        <div class = "col-xs-8 col-lg-6 containerResults"  v-show = "searchResults.length > 0 ">
+            <ul>
+                <li @click = "getIdCharacterSought($index)"  v-for = "results in searchResults"
+                    track-by= "$index">
+                    <img class = "imgSearchResult"  src = "{{results.thumbnail.path}}.{{results.thumbnail.extension}}">
+                    {{results.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+<div>
+

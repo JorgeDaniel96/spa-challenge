@@ -1,0 +1,16 @@
+.containerCharacterTopbar {
+    width: 73.9%;
+    display: flex;
+    align-items: center;
+}
+
+.sortBy {
+    height: 55px;
+    cursor: pointer;
+}
+
+.containerIconAndTitle {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}

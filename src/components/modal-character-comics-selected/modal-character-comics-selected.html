@@ -1,0 +1,26 @@
+<div id = "containerModal" v-show = "showModalCharacterComics">
+	<div id = "modalContentComicSelected">
+		<div id = "containerButtonCloseModal">
+			<button id = "buttonCloseModal" @click = "hideModal"> 
+				<img id = "iconCloseModal" src = "../../general_assets/icons/btn-close.png"> 
+			</button>
+		</div>
+		<div>
+			<div class = "containerInfoComicSelected">
+				<img @click = "showImgZoom(comicSelected)" id = "imgComicSelected" src = "{{comicSelected.images[0].path}}.{{comicSelected.images[0].extension}}"> 
+				<div id = "infoComicSelected">
+					<h1 id = "titleComic"> {{comicSelected.title || noTitleAvailableMsg}} </h1>
+					<p id = "textComicSelected"> {{comicSelected.description || noDescriptionAvailableMsg}} </p>
+				</div>
+			</div>
+			<div id = "containerButtonsModalComicSelected">	
+				<button id = "buttonAddToFavourites" @click = "addToFavourites(comicSelected)">
+					<img id = "iconAddFavouritesDefault" src = "../../general_assets/icons/btn-favourites-default.png">ADDED TO FAVOURITES
+				</button>
+				<button id = "buttonBuyFor">
+					<img id = "iconShoppingCart" src = "../../general_assets/icons/shopping-cart-primary.png"> BUY FOR {{comicSelected.prices[0].price}}
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

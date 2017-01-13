@@ -1,0 +1,108 @@
+#containerModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(4, 4, 4, 0.62);
+    z-index: 1;
+}
+
+#modalContent {
+    background: white;
+    width: 60%;
+    height: 70%;
+    padding: 10px;
+    overflow: auto;
+}
+
+#headerModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 75px;
+    margin-left: 12px;
+}
+
+#containerCloseModal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#CloseModal {
+    background: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: -16px;
+    margin-left: 5px;
+}
+
+#containerButtonRandom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttonRandom {
+    height: 40px;
+    width: 12vw;
+    border: none;
+    font-size: 100%;
+    background: #ee1d23;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#buttonRandom:hover {
+    font-size: 100%;
+    border: 2px solid black;
+}
+
+.containerInfoComics {
+    display: flex;
+    margin: 15px;
+    min-width: 347px;
+    color: #867c7b;
+}
+
+.pInfoComics {
+   font-weight: 100; 
+}
+
+.labelsInfoComics {
+    text-align: justify;
+    margin-right: 5px;
+    min-width: 350px;
+    font-size: larger;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.titleInfo {
+    margin-top: 0px;
+}
+
+.stories {
+    text-transform: capitalize;
+}
+
+#imgComic {
+    height: 370px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#imgComic:hover {
+    border: 5px solid black;
+}
+
+#titleComicInfo {
+    margin-top: 0px;
+}
+
+
+

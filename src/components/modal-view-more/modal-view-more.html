@@ -1,0 +1,31 @@
+<div id = "containerModal" v-show = "showModalViewMore" >
+	<div id = "modalContent">
+
+		<header id = "headerModal">
+			<h1>Related Comics</h1>
+
+			<div @click = "addComicsRandom()" id = "containerButtonRandom">
+				<button id = "buttonRandom">Add Random Comics</button>
+			</div>
+		</header>
+
+		<div id = "containerCloseModal">
+			<button id = "CloseModal" @click = "hideModal"> 
+				<img id = "iconCloseModal" src = "../../general_assets/icons/btn-close.png">
+			</button>
+		</div>	
+
+		<div class = "containerInfoComics" v-for = "comic in comicsCharacterSelectedOfCard">
+			<img @click = "showImgZoom(comic)" id = "imgComic" :src = "comic.thumbnail.path + '.' + comic.thumbnail.extension">
+			<div class = "infoComics">
+				<p class = "pInfoComics titleInfo"> <labeL class="labelsInfoComics">Title:</label>{{comic.title || noAvailableMsg }}</p>
+				<p class = "pInfoComics"> <label class="labelsInfoComics">Id:</label>{{comic.id || noAvailableMsg}}</p>
+				<p class = "pInfoComics stories"> <label class="labelsInfoComics">Stories:</label>{{comic.stories.items[1].name || noAvailableMsg}}</p>
+				<p class = "pInfoComics"> <label class="labelsInfoComics">Format:</label>{{comic.format || noAvailableMsg}}</p>
+				<p class = "pInfoComics"> <label class="labelsInfoComics">Price:</label>{{comic.prices[0].price || noAvailableMsg}}</p>
+				<p class = "pInfoComics"> <label class="labelsInfoComics">Modified:</label>{{comic.modified || noAvailableMsg}}</p>
+				<p class = "pInfoComics"> <label class="labelsInfoComics">Description:</label>{{comic.description || noAvailableMsg}}</p>
+			</div>	
+		</div>
+	</div>
+</div>
