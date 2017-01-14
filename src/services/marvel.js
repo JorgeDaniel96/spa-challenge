@@ -1,7 +1,8 @@
 import request from 'superagent';
 
 const END_POINT = 'https://gateway.marvel.com',
-	  API_KEY = 'ce88b62d2225d7bc9a0205c0669a088e';
+	  API_KEY = '0358e9b95b3441b86e45b415b92a4b11';
+				//48e38402bceb65cff5c1c98a1a9953c9
 		
 export default {
 	getCharacterList(orderBy, callback, pageNumber,name) { // principal
