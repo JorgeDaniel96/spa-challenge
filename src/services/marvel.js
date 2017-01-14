@@ -1,7 +1,7 @@
 import request from 'superagent';
 
 const END_POINT = 'https://gateway.marvel.com',
-	  API_KEY = '0358e9b95b3441b86e45b415b92a4b11';
+	  API_KEY = '8eb0918fb23f225c2f667f04ef068443';
 				//48e38402bceb65cff5c1c98a1a9953c9
 		
 export default {
